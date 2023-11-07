@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stefano Turcarelli">
+
+    <!-- Open Graph Protocol meta tags -->
+    <title>Flexbox Example</title>
+    <meta property="og:title" content="Flexbox Example">
+    <meta property="og:description" content="This is an example of what you could build using Flexbox.">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/stefanoturcarelli/personal-website/main/img/flexbox-example.png">
+    <meta property="og:url" content="https://stefanoturcarelli.com/flexbox-example">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900;1,6..12,400;1,6..12,500;1,6..12,600;1,6..12,700;1,6..12,800;1,6..12,900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Fonts Awesome -->
+    <script src="https://kit.fontawesome.com/6e9c638913.js" crossorigin="anonymous"></script>
+
+    <!-- Favicon -->
+    <link rel="icon"
+        href="https://raw.githubusercontent.com/stefanoturcarelli/personal-website/main/assets/img/favicon.png"
+        type="image/x-icon">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background: url(https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+        }
+
+        main {
+            margin: 50px;
+            height: 100vh;
+        }
+
+        .flexbox {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            gap: 50px;
+        }
+
+        h1 {
+            font-size: 50px;
+            font-family: 'Ubuntu Mono', monospace;
+            color: #f5f5f5;
+        }
+
+        .img-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 20px;
+        }
+
+        .earth {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+        }
+
+        .moon {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            align-self: flex-start;
+        }
+    </style>
+</head>
+
+<body>
+    <header></header>
+    <main>
+        <div class="flexbox">
+            <h1>Hello World!</h1>
+            <div class="img-container">
+                <img class="earth"
+                    src="https://images.pexels.com/photos/41953/earth-blue-planet-globe-planet-41953.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Earth">
+                <img class="moon"
+                    src="https://images.pexels.com/photos/47367/full-moon-moon-bright-sky-47367.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    alt="Moon">
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
